@@ -3,48 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather</title>
+    <title>My weather application</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
+      <div class="weather-app">
       <header>
-        <form class="weather">
+        <form id="#search-form">
           <input
-            type="text"
-            id="city"
-            placeholder="Enter a city..."
+            type="search"
+            placeholder="Enter a city.."
             required
-            autofocus
             class="search-input"
+            id="search-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input
+            type="submit"
+            value="Search"
+            class="search-button"
+            id="search-button"
+          />
         </form>
       </header>
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city">Tehran</h1>
-            <p class="current-details">
-              Tuesday 07:18, scattered clouds <br />
-              Humidity: <strong>34%</strong>, Wind: <strong>4.12km/h</strong>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-details" id="current-details">
+              <span id="current-date">Saturday 15:32</span>, moderate rain
+              <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon">⛅</span
-            ><span class="current-temperature-value">26</span
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value">24</span
             ><span class="current-temperature-unit">°C</span>
           </div>
         </div>
-        <!--<div class="forecast-weather">
-          <ul>
-            <li>Tue <br />⛅<br /><strong>34°C</strong> 22°C</li>
-            <li>Wed<br />🌧️<br /><strong>36°C</strong> 27°C</li>
-            <li>Thu <br />⛅<br /><strong>36°C</strong> 29°C</li>
-            <li>Fri <br />🌧️<br /><strong>36°C</strong> 30°C</li>
-            <li>Sat <br />☀️<br /><strong>37°C</strong> 31°C</li>
-          </ul>
-        </div>-->
       </main>
       <footer>
         <p>
