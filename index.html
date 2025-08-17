@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form class="weather">
+          <input
+            type="text"
+            id="city"
+            placeholder="Enter a city..."
+            required
+            autofocus
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city">Tehran</h1>
+            <p class="current-details">
+              Tuesday 07:18, scattered clouds <br />
+              Humidity: <strong>34%</strong>, Wind: <strong>4.12km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">⛅</span
+            ><span class="current-temperature-value">26</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+        <!--<div class="forecast-weather">
+          <ul>
+            <li>Tue <br />⛅<br /><strong>34°C</strong> 22°C</li>
+            <li>Wed<br />🌧️<br /><strong>36°C</strong> 27°C</li>
+            <li>Thu <br />⛅<br /><strong>36°C</strong> 29°C</li>
+            <li>Fri <br />🌧️<br /><strong>36°C</strong> 30°C</li>
+            <li>Sat <br />☀️<br /><strong>37°C</strong> 31°C</li>
+          </ul>
+        </div>-->
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://www.shecodes.io/graduates/68667-mina-jeybar"
+            >Mina Jeybar</a
+          >
+          and is
+          <a href="https://github.com/shecodesio/weather"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a href="https://shecodes-weather.netlify.app/">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
